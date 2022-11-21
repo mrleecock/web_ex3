@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+
+  h1 Add Todo
+  form#form-todo(action='' method='post')
+    label(for='name') Name
+    input#input-name(name='name')
+    label(for='task') Task
+    input#input-task(name='task')
+    input#submit-data(type='submit' value='Submit')
+
+  h1 Search User
+  form#form-search(action='' method='get')
+    label(for='name2') Name
+    input#search-name(name='name2')
+    input#search(type='submit' value='Search')
+  
+  h1 Search Result
+  div#search-res
+  div#todos
+
+  h1 Delete result
+  div#delete-res
